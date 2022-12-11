@@ -111,11 +111,10 @@ body {
   color: var(--brand-color-gray2);
   font-style: normal;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  list-style-type: none;
   text-decoration-line: none;
-  display: inline-flex;
+  display: flex;
 }
 
 .link-contacts a:hover,
@@ -125,15 +124,22 @@ body {
 }
 
 .contact-icon {
+
+  color: var(--brand-color-gray2);
+  padding: 0;
   margin-right: 10px;
 }
 
 /* MAINE BUTTON */
-
 .order {
   background-color: var(--brand-color-dark);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(/images/main-foto/main-foto.jpg);
+  text-align: center;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .order > .container {
@@ -178,7 +184,6 @@ body {
 }
 
 /* LOREM  */
-
 .articles h3 {
   font-weight: 700;
   font-size: 14px;
@@ -187,6 +192,25 @@ body {
   text-transform: uppercase;
   list-style-type: none;
   margin-bottom: 10px;
+}
+
+.articles li {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.articles-icon {
+  background-color: #f5f4fa;
+  border-radius: var(--border-radius-default);
+  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .articles p {
@@ -223,7 +247,7 @@ body {
   letter-spacing: 0.03em;
   padding: 0;
   color: #212121;
-  margin-bottom: 50px;
+  margin: 50px 0px 94px;
 }
 
 /* OUR TEAM  */
@@ -293,7 +317,7 @@ body {
 
 .position-icons a {
   border: none;
-  background-color: var(--brand-color-white);;
+  background-color: var(--brand-color-white);
   border-radius: 50%;
   padding: 12px;
   box-shadow: none;
@@ -345,10 +369,9 @@ body {
   padding: 60px 0;
   display: flex;
 }
+
 .end-section-flex {
-   display: flex;
-  /* flex-direction: row;
-  align-items: center;  */
+  display: flex;
 }
 
 .logo-white {
@@ -398,8 +421,8 @@ body {
 
 /* JOIN US */
 .join-us {
-margin-left: 70px;
-padding-top: 12px; 
+  margin-left: 70px;
+  padding-top: 12px;
 }
 .join-us p {
   font-weight: 700;
@@ -413,14 +436,14 @@ padding-top: 12px;
 
 .join-us-list {
   display: flex;
-    justify-content: space-between;
-  gap:10px;
-  padding:0px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0px;
 }
 
 .join-us-list li {
-   padding: 12px 12px 8px 12px;
-  fill: var(--brand-color-white); 
+  padding: 12px 12px 8px 12px;
+  fill: var(--brand-color-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   border: none;
@@ -428,7 +451,7 @@ padding-top: 12px;
 }
 
 .join-us a {
-fill: var(--brand-color-white); 
+  fill: var(--brand-color-white);
 }
 
 .join-us li:hover,
@@ -483,13 +506,18 @@ fill: var(--brand-color-white);
   list-style: none;
   margin-top: 56px;
 }
+
 .portfolio-subtitles {
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
   border-top: none;
   padding-left: 24px;
   padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-subtitles:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-name {
