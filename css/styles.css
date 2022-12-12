@@ -22,6 +22,10 @@ ul {
   list-style: none;
 }
 
+svg {
+  vertical-align: middle;
+}
+
 img {
   vertical-align: middle;
 }
@@ -92,7 +96,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  list-style: none;
 }
 
 .nav-list a:hover,
@@ -111,7 +114,7 @@ body {
   color: var(--brand-color-gray2);
   font-style: normal;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: 0.02em;
   text-decoration-line: none;
   display: flex;
@@ -124,7 +127,7 @@ body {
 }
 
 .contact-icon {
-  fill: var(--brand-color-gray2);
+  fill: currentColor;
   padding: 0;
   margin-right: 10px;
 }
@@ -228,7 +231,6 @@ body {
 }
 
 /* IMAGES PORFFESSION */
-
 .profession {
   margin-top: -94px;
 }
@@ -320,7 +322,6 @@ body {
   border-radius: 50%;
   padding: 12px;
   box-shadow: none;
-  padding: 12px 12px 8px 12px;
   fill: #afb1b8;
 }
 
@@ -329,6 +330,7 @@ body {
   display: flex;
   gap: 30px;
 }
+
 .clients h2 {
   font-family: 'Roboto';
   color: #212121;
@@ -339,26 +341,25 @@ body {
   font-weight: 700;
   margin-bottom: 50px;
 }
+
 .clients li {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-   padding: 16px 32px;
-   display: flex;
-  text-align: center;
-  align-items: center;
-   justify-content: space-between;
+  padding: 16px 32px;
 }
-.clients li:hover,
-.clients li:focus {
+
+.clients-list li:hover,
+.clients-list li:focus {
   border: 1px solid var(--brand-color-blue);
 }
+
 .clients-icon {
   fill: #afb1b8;
 }
 
-.clients-icon:hover {
+.clients-list li:hover .clients-icon {
   fill: var(--brand-color-blue);
 }
 
@@ -441,7 +442,7 @@ body {
 }
 
 .join-us-list li {
-  padding: 12px 12px 8px 12px;
+  padding: 12px;
   fill: var(--brand-color-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
