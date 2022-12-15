@@ -325,7 +325,7 @@ body {
   fill: #afb1b8;
 }
 
-/* OUR CUSTOMERS */
+/* OUR CLIENTS*/
 .clients-list {
   display: flex;
   gap: 30px;
@@ -342,24 +342,29 @@ body {
   margin-bottom: 50px;
 }
 
-.clients li {
+.clients a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
+  display: block;
 }
 
-.clients-list li:hover,
-.clients-list li:focus {
+.clients-list a:hover,
+.clients-list a:focus {
   border: 1px solid var(--brand-color-blue);
+  outline: none;
 }
 
 .clients-icon {
   fill: #afb1b8;
 }
 
-.clients-list li:hover .clients-icon {
+.clients-list a:hover .clients-icon {
+  fill: var(--brand-color-blue);
+}
+.clients-list a:focus .clients-icon {
   fill: var(--brand-color-blue);
 }
 
@@ -443,20 +448,25 @@ body {
 }
 
 .join-us-list li {
+  line-height: 0;
+}
+
+.join-us-list a {
   padding: 12px;
   fill: var(--brand-color-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   border: none;
   box-shadow: none;
+  display: block;
 }
 
 .join-us a {
   fill: var(--brand-color-white);
 }
 
-.join-us li:hover,
-.join-us li:focus {
+.join-us a:hover,
+.join-us a:focus {
   background-color: var(--brand-color-blue);
   fill: white;
   outline: none;
