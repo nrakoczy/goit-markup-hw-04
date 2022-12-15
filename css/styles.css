@@ -120,6 +120,11 @@ body {
   display: flex;
 }
 
+/* .link-contacts a svg {
+  line-height: 0px;
+} */
+
+
 .link-contacts a:hover,
 .link-contacts a:focus {
   color: var(--brand-color-blue);
