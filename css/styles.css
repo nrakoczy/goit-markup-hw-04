@@ -120,11 +120,6 @@ body {
   display: flex;
 }
 
-/* .link-contacts a svg {
-  line-height: 0px;
-} */
-
-
 .link-contacts a:hover,
 .link-contacts a:focus {
   color: var(--brand-color-blue);
@@ -492,7 +487,7 @@ body {
 
 .buttons-text {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--brand-color-gray);
+  background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -503,14 +498,14 @@ body {
   border-radius: 4px;
   height: 38px;
   width: 121px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons-text:hover,
 .buttons-text:focus {
   background-color: var(--brand-color-blue);
   color: var(--brand-color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* PORTFOLIO IMG */
